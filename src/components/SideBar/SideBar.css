@@ -1,0 +1,24 @@
+.sidebar {
+    flex: 0.2;
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-size: large;
+    background: rgb(236, 236, 236);
+    width: auto;
+    height: auto;
+    border-right: 1px solid gray;
+}
+
+.sidebar > hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .sidebar{
+        display: none;
+    }
+    
+}

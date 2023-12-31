@@ -1,0 +1,43 @@
+.recommendedvideos {
+    flex: 0.8;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 25px 20px;
+    padding-bottom: 0;
+    width: 100%; /* Adjusted to 100% for better responsiveness */
+}
+
+.recommendedvideos > h2 {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.recommendedvideos__videos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px; /* Fix for potential spacing issues */
+}
+
+.recommendedvideos__videos > * {
+    flex: 0 0 calc(33.3333% - 10px);
+    margin-left: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .recommendedvideos__videos > * {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recommendedvideos__videos > * {
+        flex: 0 0 calc(100% - 10px);
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+    .recommendedvideos {
+        padding: 15px 15px;
+    }
+}

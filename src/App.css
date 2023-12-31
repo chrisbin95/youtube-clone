@@ -1,0 +1,23 @@
+/* App.css */
+
+.app__mainpage {
+    display: flex;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .loading {
+    display: block !important;
+    width: 50%;
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .app__mainpage {
+      flex-direction: column; /* Adjusting the layout for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,54 @@
+.videocard {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.videocard__image {
+    width: 100%;
+    height: auto;
+}
+
+.videocard__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+.videocard__text {
+    margin-left: 10px;
+}
+
+.videocard__text > h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.videocard__text > p {
+    font-size: 14px;
+    color: gray;
+}
+
+.videocard__avatar {
+    height: 30px;
+    width: 30px;
+}
+
+/* Optional: Add media queries for additional responsiveness */
+@media screen and (min-width: 600px) {
+    .videocard {
+        max-width: none;
+    }
+
+    .videocard__info {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .videocard__text {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+}

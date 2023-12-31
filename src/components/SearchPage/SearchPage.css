@@ -1,0 +1,44 @@
+/* SearchPage.css */
+
+.searchpage {
+    flex: 0.8;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.searchpage__filter {
+    display: flex;
+    align-items: center;
+    color: #606060;
+    font-size: 14px;
+}
+
+.searchpage__filter > h2 {
+    margin-left: 10px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin: 10px 0;
+}
+
+/* ChannelRow Styles */
+/* Add your ChannelRow styling here */
+
+/* VideoRow Styles */
+/* Add your VideoRow styling here */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .searchpage {
+        padding: 15px;
+    }
+
+    .searchpage__filter {
+        font-size: 12px;
+    }
+
+    /* Add responsive styles for ChannelRow and VideoRow if needed */
+}
