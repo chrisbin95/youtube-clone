@@ -5,38 +5,46 @@ import SideBar from './components/SideBar/SideBar';
 import RecommendedVideos from './components/RecommendedVideos/RecommendedVideos';
 import SearchPage from './components/SearchPage/SearchPage';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+function MainContent({ children }) {
+  return (
+    <div className="app__mainpage">
+      <SideBar />
+      {children}
+    </div>
+  );
+}
 
 function App() {
-
   return (
     <div className="App">
       <Router>
-      <Header />
+        <Header />
         <Switch>
           <Route path='/video/:videoId'>
-            <div className="app__mainpage">
+            <MainContent>
               <VideoPlayer />
-            </div>
+            </MainContent>
           </Route>
           <Route path='/search/:searchQuery'>
-            <div className="app__mainpage">
-              <SideBar />
+            <MainContent>
               <SearchPage />
-            </div>
+            </MainContent>
           </Route>
           <Route path='/'>
-            <div className="app__mainpage">
-              <SideBar />
+            <MainContent>
               <RecommendedVideos />
-            </div>
+            </MainContent>
           </Route>
-          
+          {/* 404 Page */}
+          <Route path='*'>
+            <MainContent>
+              <h1>404 - Not Found</h1>
+            </MainContent>
+          </Route>
         </Switch>
       </Router>
-
-
-      
     </div>
   );
 }
