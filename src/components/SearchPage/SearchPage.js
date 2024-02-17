@@ -106,7 +106,7 @@ const SearchPage = (props) => {
               <h2>Filter</h2>
           </div>
           {isLoading && (
-              <div className='loading'>
+              <div className='loading text-center'>
                   <CircularProgress color='secondary' />
                   <p>Searching for results...</p>
               </div>

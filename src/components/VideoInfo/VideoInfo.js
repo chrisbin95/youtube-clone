@@ -26,16 +26,17 @@ const VideoInfo = ({
       </div>
       <div className='videoinfo__stats'>
         <p>
-          {viewCount} views • {publishedDate}
+          {viewCount} views &#9656; {publishedDate}
         </p>
-        <div className='videoinfo__likes'>
+        <br/>
+      </div>
+      <div className='videoinfo__likes'>
           <SideBarRow Icon={ThumbUpIcon} title={likeCount} />
           <SideBarRow Icon={ThumbDownIcon} title={dislikeCount} />
           <SideBarRow Icon={ReplyIcon} title='SHARE' />
           <SideBarRow Icon={PlaylistAddIcon} title='SAVE' />
           <SideBarRow Icon={MoreHorizIcon} title='' />
         </div>
-      </div>
       <hr />
       <div className='videoinfo__channel'>
         <div className='videoinfo__channel-info'>
@@ -46,9 +47,10 @@ const VideoInfo = ({
           </div>
         </div>
         <div className='videoinfo__subscribe'>
-          <Button color='secondary'>SUBSCRIBE</Button>
+          <Button color='secondary'><b>SUBSCRIBE</b></Button>
         </div>
       </div>
+      <br/>
       <div className='videoinfo__channeldesc'>
         <p>{description}</p>
       </div>

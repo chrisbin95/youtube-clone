@@ -10,7 +10,7 @@ const VideoRow = ({ views, description, timestamp, channel, title, image }) => {
       <div className="videorow__text flex flex-col justify-between sm:ml-2">
         <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold mb-2">{title}</h3>
         <p className='videorow__headline text-sm sm:text-base lg:text-lg xl:text-xl text-gray-600 mb-2'>
-          {channel} • {views} views • {timestamp}
+          <u><b>{channel}</b></u> • {views} views &#9656; {timestamp}
         </p>
         <p className='videorow__description text-sm sm:text-base lg:text-lg xl:text-xl'>
           {description}

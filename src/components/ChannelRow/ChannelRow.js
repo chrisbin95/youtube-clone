@@ -11,7 +11,7 @@ const ChannelRow = ({ image, channel, subs, noOfVideos, description }) => {
         src={image}
       />
       <div className="flex-1">
-        <h4 className="font-medium">{channel}</h4>
+        <h4 className="font-medium"><b>{channel}</b></h4>
         <p className="text-gray-600">{subs} Subscribers • {noOfVideos} Videos</p>
         <p className="text-sm">{description}</p>
       </div>

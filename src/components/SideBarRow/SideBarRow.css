@@ -1,7 +1,7 @@
 .sidebarrow {
     display: flex;
     align-items: center;
-    padding: 10px 40px 10px 20px;
+    padding: 15px 60px 30px 45px;
 }
 
 .sidebarrow__icon {
@@ -17,7 +17,7 @@
 }
 
 .sidebarrow:hover {
-    background-color: lightgray;
+    background-color: transparent;
     cursor: pointer
 }
 

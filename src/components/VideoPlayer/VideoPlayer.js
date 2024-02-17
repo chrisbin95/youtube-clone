@@ -82,7 +82,6 @@ const VideoPlayer = () => {
 
     return (
         <>
-        <SideBar/>
         <div className='videoplayer'>
             <div className='videoplayer__videodetails'>
                 <div className='videoplayer__video'>

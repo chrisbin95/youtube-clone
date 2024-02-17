@@ -1,6 +1,7 @@
 .videoinfo{
     width: 100% !important;
     height: auto;
+    padding: 30px;
 }
 
 .videoinfo__stats,
@@ -11,13 +12,14 @@
 }
 
 .videoinfo__headline > h1 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: large;
 }
 
 .videoinfo__stats > p {
     font-size: medium;
-    color: gray;
+    color: rgb(88, 88, 88);
+    padding-bottom: 20px;
 }
 
 .videoinfo__stats > * {
@@ -57,7 +59,9 @@ hr {
     font-size: small;
     margin: 0;
 }
-
+.videoinfo__subscribe{
+    font-weight: bold;
+}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .videoinfo__headline > h1 {

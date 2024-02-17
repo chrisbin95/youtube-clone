@@ -6,7 +6,12 @@
     padding-bottom: 0;
     width: 100%; /* Adjusted to 100% for better responsiveness */
 }
-
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .recommendedvideos > h2 {
     margin-left: 5px;
     margin-bottom: 20px;

@@ -11,8 +11,24 @@
   
   .loading {
     display: block !important;
-    width: 50%;
     margin: auto;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .text-center {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .loader-container {
+    position: absolute;
+    z-index: 9999; /* Ensure loader is on top of other content */
   }
   
   @media screen and (max-width: 480px) {

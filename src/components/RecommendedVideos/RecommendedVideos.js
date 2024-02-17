@@ -68,7 +68,7 @@ const RecommendedVideos = () => {
   return (
       <div className='recommendedvideos'>
           {isLoading && (
-              <div className='loading'>
+              <div className='loading text-center'>
                   <CircularProgress color='secondary' />
                   <p>Loading recommended videos...</p>
               </div>
