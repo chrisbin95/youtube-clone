@@ -1,0 +1,63 @@
+/* VideoRow.css */
+
+/* Container styles */
+.videorow {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  /* Image styles */
+  .videorow img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Text container styles */
+  .videorow__text {
+    flex: 1;
+    margin-left: 1rem;
+    flex-direction: column; /* Adjust the margin as needed */
+  }
+  
+  /* Title styles */
+  .videorow__text h3 {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  /* Headline styles */
+  .videorow__headline {
+    font-size: 0.875rem; /* Adjust the font size as needed */
+    color: #888888;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Description styles */
+  .videorow__description {
+    padding-bottom: 10px;
+    font-size: 0.85rem; /* Adjust the font size as needed */
+    color: #333333;
+    text-align: justify;
+  }
+  
+  /* Responsive styles */
+  @media screen and (min-width: 640px) {
+    .videorow {
+      flex-direction: column;
+    }
+  
+    .videorow img {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 1rem; /* Adjust the margin as needed */
+    }
+  
+    .videorow__text {
+      margin-left: 0;
+      padding: 17px;
+    }
+  }
+  

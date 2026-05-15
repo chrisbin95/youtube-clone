@@ -1,0 +1,49 @@
+.sidebarrow {
+    display: flex;
+    align-items: center;
+    padding: 15px 60px 30px 45px;
+}
+
+.sidebarrow__icon {
+    color: #606060;
+    font-size: x-large !important;
+}
+
+.sidebarrow__title {
+    flex: 1;
+    margin-left: 20px;
+    font-size: small;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.sidebarrow:hover {
+    background-color: transparent;
+    cursor: pointer
+}
+
+.sidebarrow:hover >.sidebarrow__icon {
+    color: red
+}
+
+.sidebarrow:hover >.sidebarrow__title {
+    color: #ffffff;
+}
+
+.sidebarrow:active >.sidebarrow__title {
+    color: #ff0000;
+}
+
+.sidebarrow.selected {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-left: 3px solid #ff0000;
+}
+
+.sidebarrow.selected >.sidebarrow__icon {
+    color: #ff0000;
+}
+
+.sidebarrow.selected >.sidebarrow__title {
+    font-weight: bold;
+    color: #ffffff;
+}
